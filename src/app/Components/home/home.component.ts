@@ -9,8 +9,7 @@ import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-home',
-  // imports: [HeroComponent, FactsComponent, FeaturesComponent, ServicesComponent, FaqComponent,TestimonialComponent],
-  imports: [HeroComponent, FeaturesComponent, HeaderComponent],
+  imports: [HeroComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
