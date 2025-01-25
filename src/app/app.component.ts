@@ -41,52 +41,52 @@ export class AppComponent implements OnInit, AfterViewInit {
     });
 
     // Initialize WOW.js if it's available
-    if (typeof WOW !== 'undefined') {
-      new WOW().init();
-    } else {
-      console.error('WOW.js is not defined');
-    }
-     // Subscribe to Router events to re-initialize the carousel on navigation
-     this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      this.initializeOwlCarousel();
-    });
+    // if (typeof WOW !== 'undefined') {
+    //   new WOW().init();
+    // } else {
+    //   console.error('WOW.js is not defined');
+    // }
+    //  // Subscribe to Router events to re-initialize the carousel on navigation
+    //  this.router.events.pipe(
+    //   filter(event => event instanceof NavigationEnd)
+    // ).subscribe(() => {
+    //   this.initializeOwlCarousel();
+    // });
   }
 
 
   ngAfterViewInit() {
     // Initialize the Owl Carousel after the view has been initialized
-    this.initializeOwlCarousel();
+    //this.initializeOwlCarousel();
   }
 
-  initializeOwlCarousel() {
-    // Delay to ensure the DOM is fully rendered and ready for Owl Carousel initialization
-    setTimeout(() => {
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        items: 1
-      });
-    }, 100);  // Delay in milliseconds to make sure DOM is ready
-  }
+  // initializeOwlCarousel() {
+  //   // Delay to ensure the DOM is fully rendered and ready for Owl Carousel initialization
+  //   setTimeout(() => {
+  //     $(".owl-carousel").owlCarousel({
+  //       loop: true,
+  //       margin: 10,
+  //       nav: true,
+  //       items: 1
+  //     });
+  //   }, 100);  // Delay in milliseconds to make sure DOM is ready
+  // }
 
-  @HostListener('window:scroll', [])
-  onScroll() {
-    const scrollTopButton = document.querySelector('.back-to-top') as HTMLElement;
-    if (window.scrollY > 300) {
-      scrollTopButton.classList.add('show');
-    } else {
-      scrollTopButton.classList.remove('show');
-    }
-  }
+  // @HostListener('window:scroll', [])
+  // onScroll() {
+  //   const scrollTopButton = document.querySelector('.back-to-top') as HTMLElement;
+  //   if (window.scrollY > 300) {
+  //     scrollTopButton.classList.add('show');
+  //   } else {
+  //     scrollTopButton.classList.remove('show');
+  //   }
+  // }
 
-  scrollToTop(event: Event) {
-    event.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }
+  // scrollToTop(event: Event) {
+  //   event.preventDefault();
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth',
+  //   });
+  // }
 }

@@ -1,40 +1,7 @@
-<!-- ----------------------------------------------------------------------- -->
-<!--                              navbar works!                              -->
-<!-- ----------------------------------------------------------------------- -->
-
-<!-- <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      ApanaInvoice
-    </a>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">AboutUS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sign Up</a>
-      </li>
-    <button type="button" class="btn btn-danger">Sign Up</button>
-  </ul>
-  </div>
-</nav> -->
-
-<header id="header" class="header d-flex align-items-center sticky-top">
+<!-- <header id="header" class="header d-flex align-items-center sticky-top">
   <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
     <a href="index.html" class="logo d-flex align-items-center me-auto">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <img src="assets/img/logo.png" alt="">
       <h1 class="sitename">ApanaInvoice</h1>
     </a>
     <nav id="navmenu" class="navmenu">
@@ -43,30 +10,63 @@
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
-        <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-        <!-- <li><a href="#team">Team</a></li> -->
-        <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li> -->
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
+    <a class="btn btn-danger rounded-pill px-4" href="_signup">Sign In</a>
+  </div>
+</header> -->
 
-    <a class="btn-getstarted" href="_signup">Sign Up</a>
 
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 w-100">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#ffd700"
+            stroke-width="2" class="me-2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <line x1="10" y1="9" x2="8" y2="9" />
+          </svg>
+          <span class="fw-bold">
+            <span class="text-primary">APANA</span>
+            <span class="text-warning">INVOICE</span>
+          </span>
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Use ms-auto to push links to the right -->
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feature">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">AboutUS</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <button class="btn btn-danger rounded-pill px-4" routerLink="/_signup" routerLinkActive="router-link-active" >Sign up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
