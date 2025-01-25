@@ -644,7 +644,8 @@ h6 {
 
 .footer .footer-links ul a {
   display: inline-block;
-  color: rgba(68, 68, 68, 0.2); /* Fallback for unsupported browsers */
+  text-decoration: none;
+  color: black; /* Fallback for unsupported browsers */
   /* color: color-mix(in srgb, var(--default-color), transparent 20%); */
   line-height: 1;
 }

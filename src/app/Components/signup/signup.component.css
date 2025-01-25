@@ -1,0 +1,49 @@
+button {
+  background-color: #ffa100;
+  border: solid rgb(210, 183, 183) 2px;
+  border-radius: 50px;
+}
+
+section{
+  width: 600px;
+  margin-left: 500px;
+ }
+
+a{
+  color: white;
+}
+
+.nav-item{
+  background-color: #ffa100;
+  border: solid rgb(210, 183, 183) 2px;
+  border-radius: 50px;
+}
+
+.nav-item:hover{
+  background-color: #f79c00;
+}
+
+input{
+  border: solid rgb(210, 183, 183) 2px;
+  border-radius: 50px;
+}
+
+  @media screen and (max-width: 768px) {
+    section {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    section {
+      width: 100%;
+      margin-left: 0;
+      padding: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+    }
+  }
