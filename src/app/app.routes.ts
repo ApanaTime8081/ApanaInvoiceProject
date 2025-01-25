@@ -11,10 +11,12 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 // import { FaqsComponent } from './Components/navMoreAbout/faqs/faqs.component';
 // import { ContactsComponent } from './Components/contacts/contacts.component';
 // import { CareerComponent } from './Components/career/career.component';
+import { SignupComponent } from './Components/signup/signup.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent},
-    { path: '_aboutUs', component: AboutUsComponent}
+    { path: '_aboutUs', component: AboutUsComponent},
+    { path: '_signup', component: SignupComponent}
     // { path: '_services', component: NavServicesComponent},
     // { path: '_blog/blogs', component: BlogGridComponent},
     // { path: '_blog/blogDetails', component: BlogDetailsComponent},
